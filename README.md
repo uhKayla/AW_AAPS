@@ -4,6 +4,10 @@
 
 > ⚠️⚠️ This is a heavy W.I.P! Features will be broken, and force pushes will be used! ⚠️⚠️
 
+This is an animation library for APS. It requires Animator as Code, NDMF, Modular Avatar, and relevant AAC plugins to work.
+
+---
+
 From [APS](https://github.com/uhKayla/AW_APS)
 
 ### Angel's Penetration System
