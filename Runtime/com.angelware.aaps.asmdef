@@ -1,0 +1,23 @@
+{
+    "name": "com.angelware.aaps",
+    "rootNamespace": "",
+    "references": [
+        "VRC.SDK3A",
+        "VRC.SDKBase",
+        "com.angelware.aps",
+        "AnimatorAsCode.V1",
+        "AnimatorAsCode.V1.NDMFProcessor",
+        "AnimatorAsCode.V1.ModularAvatar",
+        "nadena.dev.ndmf.runtime",
+        "nadena.dev.ndmf"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,22 @@
+{
+  "name": "com.angelware.aaps",
+  "displayName": "AW_AAPS",
+  "version": "0.0.1",
+  "description": "Animator as code addon for AW_APS, not required but recommended.",
+  "dependencies": {
+    "com.angelware.aps": "0.0.1"
+  },
+  "gitDependencies": {},
+  "vpmDependencies": {
+    "com.vrchat.avatars": "3.5.0"
+  },
+  "author": {
+    "name": "ANGELWARE",
+    "email": "ARCHANGEL@ANGELWARE.NET",
+    "url": "angelware.net"
+  },
+  "legacyFolders": {},
+  "legacyFiles": {},
+  "localPath": "P:\\ANGEL-01\\Packages\\com.angelware.aaps",
+  "unity": "2022.1"
+}
