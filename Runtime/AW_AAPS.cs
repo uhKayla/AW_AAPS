@@ -6,8 +6,11 @@ using nadena.dev.ndmf;
 using ANGELWARE.AW_APS;
 using ANGELWARE.AW_AAPS;
 using System.Collections.Generic;
+using AnimatorAsCode.V1;
 using AnimatorAsCode.V1.ModularAvatar;
 using AnimatorAsCode.V1.NDMFProcessor;
+using AnimatorAsCode.V1.VRC;
+using BestHTTP.SecureProtocol.Org.BouncyCastle.Asn1.X509;
 using VRC.Core;
 using VRC.SDK3.Avatars.Components;
 using Object = UnityEngine.Object;
@@ -30,7 +33,7 @@ namespace ANGELWARE.AW_AAPS
             var fx = ctrl.NewLayer("AnimatedAPS");
             var maAc = MaAc.Create(my.gameObject);
             
-            var apsComponent = Object.FindObjectOfType<AW_Aps>();
+            var apsComponent = Object.FindObjectsOfType<AW_ApsHoleMarker>();
             if (apsComponent == null)
             {
                 Debug.LogError("An AAPS component is present on the avatar but no APS component " +
@@ -45,6 +48,40 @@ namespace ANGELWARE.AW_AAPS
 
             var oneFloat = aac.NoAnimator().FloatParameter(my.oneFloatParameter);
             var masterDbt = aac.NewBlendTree().Direct();
+
+            // // Toggle Layer
+            // var toggleLayer = ctrl.NewLayer("Toggles");
+            // // Toggle Layer Init State
+            // var initState = toggleLayer.NewState("Init").WithAnimation(aac.DummyClipLasting(1, AacFlUnit.Frames));
+            //
+            // // Make a new layer and add toggles for each of the components automagically
+            // foreach (var holeMarker in apsComponent)
+            // {
+            //     // Trigger parameter (use in menu)
+            //     var pTrigger = fx.BoolParameter("Input/" + holeMarker.tag);
+            //     // Tracking parameter (tracks state of this animator)
+            //     var pTracking = fx.BoolParameter("Tracking/" + holeMarker.tag);
+            //     // Toggle parameter (drives smoothed toggle)
+            //     var pToggle = fx.FloatParameter("Menu/" + holeMarker.tag);
+            //     // State for this hole
+            //     var toggledState = toggleLayer.NewState(holeMarker.tag).WithAnimation(aac.DummyClipLasting(1, AacFlUnit.Frames));
+            //     // Parameter Driver
+            //     toggledState.Drives(pToggle, 1.0f);
+            //     toggledState.Drives(pTracking, true);
+            //
+            //     foreach (var component in apsComponent)
+            //     {
+            //         // Short lived temp parameter while generating this state
+            //         var pOtherTracking = aac.NoAnimator().BoolParameter("Tracking/" + component.tag);
+            //         // Drive all other tracking states to false when this state is activated.
+            //         toggledState.Drives(pOtherTracking, false);
+            //     }
+            //     
+            //     // Transition from Init
+            //     initState.TransitionsTo(toggledState).When(pTrigger.IsTrue());
+            //     // Transition to Init
+            //     toggledState.TransitionsTo(initState).Automatically();
+            // }
 
             foreach (var marker in my.holeMarkers)
             {

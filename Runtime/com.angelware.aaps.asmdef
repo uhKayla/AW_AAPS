@@ -9,7 +9,8 @@
         "AnimatorAsCode.V1.NDMFProcessor",
         "AnimatorAsCode.V1.ModularAvatar",
         "nadena.dev.ndmf.runtime",
-        "nadena.dev.ndmf"
+        "nadena.dev.ndmf",
+        "AnimatorAsCode.V1.VRChat"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
