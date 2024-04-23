@@ -3,7 +3,8 @@ using ANGELWARE.AW_AAPS;
 using ANGELWARE.AW_APS;
 using AnimatorAsCode.V1;
 using AnimatorAsCode.V1.ModularAvatar;
-using AnimatorAsCode.V1.NDMFProcessor;
+// using AnimatorAsCode.V1.NDMFProcessor;
+using ANGELWARE.AW_AAC.NDMFProcessor;
 using AnimatorAsCode.V1.VRC;
 using nadena.dev.ndmf;
 using UnityEngine;
@@ -13,7 +14,7 @@ using VRC.SDK3.Avatars.Components;
 
 namespace ANGELWARE.AW_AAPS
 {
-    public class AW_AAPSPenetrator : AacPlugin<AW_ApsPenetratorComponent>
+    public class AW_AAPSPenetrator : AW_AacPlugin<AW_ApsPenetratorComponent>
     {
         protected override AacPluginOutput Execute()
         {

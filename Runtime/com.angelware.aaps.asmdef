@@ -6,11 +6,11 @@
         "VRC.SDKBase",
         "com.angelware.aps",
         "AnimatorAsCode.V1",
-        "AnimatorAsCode.V1.NDMFProcessor",
         "AnimatorAsCode.V1.ModularAvatar",
         "nadena.dev.ndmf.runtime",
         "nadena.dev.ndmf",
-        "AnimatorAsCode.V1.VRChat"
+        "AnimatorAsCode.V1.VRChat",
+        "com.angelware.aac"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

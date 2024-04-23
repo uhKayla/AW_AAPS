@@ -8,7 +8,8 @@ using ANGELWARE.AW_AAPS;
 using System.Collections.Generic;
 using AnimatorAsCode.V1;
 using AnimatorAsCode.V1.ModularAvatar;
-using AnimatorAsCode.V1.NDMFProcessor;
+// using AnimatorAsCode.V1.NDMFProcessor;
+using ANGELWARE.AW_AAC.NDMFProcessor;
 using AnimatorAsCode.V1.VRC;
 using BestHTTP.SecureProtocol.Org.BouncyCastle.Asn1.X509;
 using VRC.Core;
@@ -25,7 +26,7 @@ namespace ANGELWARE.AW_AAPS
         public List<AW_HoleMarkerAnimation> holeMarkers;
     }
 
-    public class AW_AAPSPlugin : AacPlugin<AW_AAPS>
+    public class AW_AAPSPlugin : AW_AacPlugin<AW_AAPS>
     {
         protected override AacPluginOutput Execute()
         {
